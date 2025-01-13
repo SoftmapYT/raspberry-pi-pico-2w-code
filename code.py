@@ -22,7 +22,7 @@ def open_chrome():
     time.sleep(10)  # Wait for Opera GX to open
     
     # Type the URL and press Enter
-    keyboard_layout.write("https://www.youtube.com/")
+    keyboard_layout.write("https://youtu.be/xvFZjo5PgG0?si=WlLyyhOVCWHcw5Na")
     keyboard.press(Keycode.ENTER)
     keyboard.release(Keycode.ENTER)
 
