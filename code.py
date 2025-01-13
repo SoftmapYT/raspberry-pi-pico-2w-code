@@ -9,23 +9,23 @@ keyboard = Keyboard(usb_hid.devices)
 keyboard_layout = KeyboardLayoutUS(keyboard)
 
 # Function to open Opera GX and navigate to Google
-def open_opera_gx():
+def open_chrome():
     # Press Windows key
     keyboard.press(Keycode.WINDOWS)
     keyboard.release(Keycode.WINDOWS)
     time.sleep(0.5)
     
     # Type "Opera GX" and press Enter
-    keyboard_layout.write("Opera GX")
+    keyboard_layout.write("Chrome")
     keyboard.press(Keycode.ENTER)
     keyboard.release(Keycode.ENTER)
-    time.sleep(3)  # Wait for Opera GX to open
+    time.sleep(10)  # Wait for Opera GX to open
     
     # Type the URL and press Enter
-    keyboard_layout.write("https://www.google.com")
+    keyboard_layout.write("https://www.youtube.com/")
     keyboard.press(Keycode.ENTER)
     keyboard.release(Keycode.ENTER)
 
 # Wait for a few seconds before executing the function
 time.sleep(5)
-open_opera_gx()
+open_chrome()
